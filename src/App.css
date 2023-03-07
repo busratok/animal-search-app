@@ -1,38 +1,27 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  min-height: 95vh;
+  background-image: url("../public/images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  font-family: "Fredoka One", cursive;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+li {
+  list-style: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  background-color: #f38d3c;
+  transition: all 0.8s ease-in-out;
+  cursor: pointer;
+}
+.card:hover .card-image {
+  transform: scale(0.95);
 }
